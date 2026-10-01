@@ -1,0 +1,25 @@
+JD PDF
+   ↓
+JD Parser
+   ↓
+Required / Preferred Skills
+   ↓
+Query Builder
+   ↓
+Dense Retrieval ─────┐
+                     ├──→ RRF
+BM25 Sparse ─────────┘
+                     ↓
+Candidate Aggregation
+                     ↓
+MMR Evidence Selection
+                     ↓
+Requirement Matching
+                     ↓
+LLM Reranking
+      ↓
+   fallback
+      ↓
+Final Ranking
+                     ↓
+Top Candidates

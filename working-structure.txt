@@ -1,0 +1,54 @@
+                    RECRUITER
+                       │
+                       ▼
+                React Frontend
+                 localhost:5173
+                       │
+                       │ HTTP API
+                       ▼
+                 FastAPI Backend
+                 localhost:8000
+                       │
+          ┌────────────┼─────────────┐
+          │            │             │
+          ▼            ▼             ▼
+       Search       Matching      Candidates
+        API           API            API
+          │            │             │
+          │            ▼             │
+          │         JD Parser        │
+          │            │             │
+          │            ▼             │
+          │      Adaptive RAG        │
+          │            │             │
+          └────────────┼─────────────┘
+                       ▼
+              Hybrid Retrieval
+               /             \
+              ▼               ▼
+           Dense            Sparse
+         Pinecone            BM25
+              \               /
+               ▼             ▼
+                    RRF
+                     │
+                     ▼
+              Candidate Aggregation
+                     │
+                     ▼
+                    MMR
+                     │
+                     ▼
+             Candidate Scoring
+                     │
+                     ▼
+              LLM Reranking
+                     │
+                     ▼
+                Verification
+                     │
+                     ▼
+              Final Candidates
+                     │
+                     ▼
+                React UI

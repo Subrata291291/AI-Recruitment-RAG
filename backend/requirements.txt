@@ -1,0 +1,57 @@
+# =========================
+# Backend / API
+# =========================
+fastapi ##Backend API
+uvicorn[standard] ##Run FastAPI server
+python-dotenv
+pydantic
+pydantic-settings
+python-multipart
+
+# =========================
+# LangChain
+# =========================
+langchain ## Main RAG framework
+langchain-core
+langchain-community ## Loaders/retrievers/integrations
+langchain-text-splitters ## Chunk resumes/JDs
+
+# =========================
+# LLM Providers
+# =========================
+langchain-groq ## Groq LLM
+langchain-openai ## OpenAI/OpenRouter-compatible workflows
+langchain-google-genai ## Gemini
+langchain-openrouter ## OpenRouter-compatible workflows
+
+# =========================
+# Pinecone
+# =========================
+pinecone ## Pinecone SDK
+
+# =========================
+# PDF Processing
+# =========================
+pypdf ## Read PDF files
+
+# =========================
+# Embeddings
+# =========================
+sentence-transformers ## Embeddings / reranking models
+
+# =========================
+# Sparse Retrieval
+# =========================
+rank-bm25 ## Sparse/BM25 retrieval
+
+# =========================
+# Reranking
+# =========================
+transformers
+torch ## Required by many Transformer models
+
+# =========================
+# HTTP / Utilities
+# =========================
+httpx
+requests
